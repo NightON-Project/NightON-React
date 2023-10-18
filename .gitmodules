@@ -1,6 +1,3 @@
-[submodule "api/API-NightON"]
-	path = api/API-NightON
-	url = https://github.com/fereol023/API-NightON.git
 [submodule "api/NightON-API"]
 	path = api/NightON-API
 	url = https://github.com/NightON-Project/NightON-API.git
