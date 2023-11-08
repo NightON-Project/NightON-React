@@ -1,14 +1,15 @@
-import React from 'react';
+import React from "react";
+import Navbar from "../../components/Navbar/index";
+import Footer from "../../components/Footer/index";
 function Index() {
-
-    return (
-        <div>
-            {/* <Navbar /> */}
-            <div className="home-container">
-                <h1>HOME</h1>
-            </div>
-        </div>
-    );
+  return (
+    <div>
+      <div className="home-container">
+        <Navbar />
+        <Footer />
+      </div>
+    </div>
+  );
 }
 
 export default Index;
