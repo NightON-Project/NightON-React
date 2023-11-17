@@ -1,138 +1,36 @@
-import { useState, useEffect, useRef } from "react";
+import React from "react";
 import styles from "./index.module.scss";
-import { Link } from "react-router-dom";
-// import Logo from "../../../public/logo.png";
-// import Logo2 from "../../../public/airbnbi.png";
-// import WithAuth from '../../HOC/WithAuth';
-// import { MagnifyingGlassIcon, Bars3Icon } from '@heroicons/react/24/solid';
+import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
+import LanguageRoundedIcon from "@mui/icons-material/LanguageRounded";
+import BasicMenu from "./ProfileMenu";
 
-const Index = () => {
-  const [openmenu, setopenMenu] = useState(false);
-
-  const divRef = useRef(null);
-
-  const afficherMenu = () => {
-    setopenMenu((prev) => !prev);
-    console.log(openmenu);
-  };
-
-  useEffect(() => {
-    function handleClickOutside(event) {
-      if (divRef.current && !divRef.current.contains(event.target)) {
-        setopenMenu(false);
-      }
-    }
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [divRef]);
-
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-
-  //const token = localStorage.getItem("token");
-  useEffect(() => {
-    const token = localStorage.getItem("token");
-
-    if (token) {
-      setIsAuthenticated(true);
-    } else {
-      setIsAuthenticated(false);
-    }
-  }, []);
-
+const index = () => {
   return (
-    <header>
-      <div className={styles.header__main}>
-        <div className={styles.header__logo}>
-          {/* <Link href="/" className={styles.header__logoIcon}>
-            <img src="" alt="airbnbi" width={33} />
-          </Link> */}
-          <Link href="/" className={styles.header__logoImg}>
-            <img src="" alt="Airbnb" />
-          </Link>
-        </div>
-        <div className={styles.header__menu1}>
-          <p>N'impote où</p>
-          <p>Une semaine</p>
-          <p>Ajouter des voyageurs</p>
-          <p className={styles.header__search}>
-            {/* <MagnifyingGlassIcon /> */}
-          </p>
-        </div>
-        <div className={styles.header__menu2}>
-          <p className={styles.header__menuLink}>
-            <span>
-              <Link href="/newpost" className={styles.header__register}>
-                Mettre mon logement sur Airbnb
-              </Link>
-            </span>
-          </p>
-          <p className={styles.header__menuGlobe}>
-            <img
-              alt=""
-              src="https://cdn-icons-png.flaticon.com/128/512/512127.png"
-              color="black"
-              height={20}
-            />
-          </p>
-          <p className={styles.header__profil} onClick={() => afficherMenu()}>
-            <span className={styles.header__profilI}>
-              {/* <Bars3Icon color="black" width={25} /> */}
-            </span>
-            <span>
-              <img
-                alt=""
-                src="https://cdn-icons-png.flaticon.com/512/7710/7710521.png"
-                width={25}
-              />
-            </span>
-          </p>
-          {openmenu ? (
-            <div ref={divRef} className={styles.header__divMenu}>
-              <ul className={styles.nav__list1}>
-                <li className={styles.nav__item}>
-                  {!isAuthenticated && (
-                    <Link href="/register" className={styles.header__register}>
-                      Inscription
-                    </Link>
-                  )}
-                  {isAuthenticated && <Link href="/mesposts">Mes posts</Link>}
-                </li>
-                <li className={styles.nav__item}>
-                  {!isAuthenticated && <Link href="/login">Connexion</Link>}
-                  {isAuthenticated && <Link href="/profil">Mon profil</Link>}
-                </li>
-                <li className={styles.nav__item}>
-                  {isAuthenticated && <Link href="/logout">Déconnexion</Link>}
-                </li>
-              </ul>
-              <ul className={styles.nav__list2}>
-                <li className={styles.nav__item}>
-                  <Link href="/newpost" className={styles.nav__mettre}>
-                    Mettre mon logement sur Airbnb
-                  </Link>
-                </li>
-                <li className={styles.nav__item}>
-                  {!isAuthenticated && <Link href="/aide">Aide</Link>}
-                  {isAuthenticated &&
-                    {
-                      /* <Link href="/wishlist">Favoris {wishlist.length}</Link> */
-                    }}
-                </li>
-                <li className={styles.nav__item}>
-                  <Link href="/">Accueil</Link>
-                </li>
-              </ul>
-            </div>
-          ) : (
-            <></>
-          )}
+    <div className={styles.navbar}>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/1280px-Airbnb_Logo_B%C3%A9lo.svg.png"
+        alt="Airbnb"
+        className={styles.navbar_logo}
+      />
+      <div className={styles.search_bar}>
+        <div className={styles.search_bar_text}>Any Where</div>
+        <div className={styles.search_bar_text}>Any Week</div>
+        <div className={styles.search_bar_text2}>Add guests</div>
+        <div className={styles.search_bar_icon_div}>
+          <SearchRoundedIcon />
         </div>
       </div>
-    </header>
+      <div className={styles.profile_container}>
+        <div className={styles.nighton_home}>NightOn Your Home</div>
+        <div className={styles.nighton_home}>
+          <LanguageRoundedIcon sx={{ fontSize: "1.3rem" }} />
+        </div>
+        <div className={styles.profile}>
+          <BasicMenu />
+        </div>
+      </div>
+    </div>
   );
 };
 
-export default Index;
+export default index;
