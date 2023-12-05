@@ -1,0 +1,128 @@
+.container {
+    display: flex;
+    background-image: url('Default.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: space-between;
+}
+.square-container {
+    width: 600px;
+    height: 600px;
+    background-color: black; /* ou la couleur de fond souhaitée */
+    border-radius: 18px;
+    background: #FFF;
+    align-items: center;
+    justify-content: center;
+    /*flex-shrink: 2;*/
+  }
+.register {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .box {
+    max-height: 600px;
+    max-width: 600px;
+    left: 0;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 571px;
+    background-color: rgb(13, 1, 1);
+}
+.register-header {  
+    padding: 2em;
+    border-radius: 8px;
+    margin: auto;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4p    x 8px rgba(0, 0, 0, 0.2);
+  }
+  
+h1 {
+    color: #fff;
+    margin-bottom: 0.5em;
+  }
+  
+  p {
+    color: #dcdcdc;
+    margin-bottom: 2em;
+  }
+  
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+input[type="text"],
+input[type="email"] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 20px;
+    color: #dcdcdc;
+    cursor: pointer;
+  }
+  
+  .register-header > button {
+    background-color: #f8f8f8;
+    color: #5c54a4;
+    margin-bottom: 20px;
+  }
+  
+  /* Ajoutez des médias queries si nécessaire pour rendre le formulaire réactif */
+  @media (max-width: 768px) {
+    .register-header {
+      width: 95%;
+    }
+  }
+  .box {
+    height: 1px;
+    width: 190px;
+  }
+  
+  .box .line {
+    height: 1px;
+    left: 0;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    width: 190px;}
+.OR{
+    color:white;
+    margin-bottom: 2em;
+}
