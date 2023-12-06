@@ -1,0 +1,142 @@
+
+  .footer {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 40px;
+    margin-top: 50px;
+  }
+
+  .footer_slices {
+    display: flex;
+    justify-content: flex-end;
+    gap: 60px;
+    padding-bottom: 25px;
+  }
+  .infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  
+  }
+  p{
+    font-size: 0.75rem;
+    color: #717171;
+    ;
+  }
+ 
+  
+  .logo_img {
+    width: 100px;
+    height: 100px;
+  
+  }
+
+ 
+  .social_icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+
+  
+  .links_column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 15px;
+    font-size: 0.75rem;
+  }
+  .footer .footer_slices > section {
+    flex: 1;
+  }
+  
+  .links_column_title  {
+    font-size: 20px;
+    line-height: 12px;
+    font-weight: bold;
+    // margin-bottom: 6px;
+    
+    h6 {
+        color: #4338CA;
+    //     line-height: 12px;
+    // font-weight: bold;
+    font-size: 20px;
+    }
+  }
+  
+// .social_medias {
+//   display: flex;
+//   justify-content: space-between;
+    
+//   padding: 20px;
+  
+// }
+.left_part {
+  display: flex;
+  justify-content: space-around;
+  gap: 25px;
+}
+.right_part {
+    display: flex;
+    flex-direction: column; 
+    gap : 10px;
+  }
+.instagram {
+    width: 44px;
+    height: 44px;
+    
+}
+  
+  @media only screen and (max-width: 768px) {
+    
+  .footer {
+    // width: 100%;
+    // max-width: 1100px;
+    // margin: 0 auto;
+    
+  }
+    .footer_slices {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    
+    }
+    .infos {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .links {
+    //       margin-top: 5px;
+    //   text-align: center;
+
+    }
+    // .links_column {
+    //   margin-bottom: 0;
+    // }
+    .copyright {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .right_part {
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
+    }
+    .logo_img,.playstore,.appstore   {
+        display: none;
+    }
+    .left_part {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+      }
+    
+  }
