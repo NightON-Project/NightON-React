@@ -7,13 +7,6 @@
     display: flex;
     justify-content: space-between;
 }
-.google{
-
-}
-.facebook{
-  height: 24px;
-  width: 24px;
-}
 
 .alignement {
   display: flex;
@@ -28,6 +21,11 @@
 .line2 {
   width: 45%;
   margin: -4px;
+}
+.reseaux{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 .square-container {
     margin-right: 188PX;
@@ -80,18 +78,43 @@ h1 {
   display: inline-block;
   padding: 10px 20px;
 }
+.deux{
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+}
+.un{
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+}
 .google{
-    
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
     border: none;
-    color: white;
-    padding: 15px 32px;
+    color: black;
+    width: 350px;
+    height: 40px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
     border-radius: 4px;
+  }
+  .facebook{
+      display: flex;
+      justify-content: space-between;
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+      border-radius: 4px;
+      width: 93px;
+      height: 40px;
   }
   
 input[type="text"],
