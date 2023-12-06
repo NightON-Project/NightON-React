@@ -16,9 +16,6 @@ function Index() {
   return (
     <div className="container">
       <div className="register">
-        <div className="box2">
-          <img className='rectangle' alt='rectangle' src='Rectangle.png'/>
-        </div>
         <header className="register-header">
           <h1>Que la fête commence !!!</h1>
           <p>Rejoins Nighton, réserve ton logement et commence à faire la fête dès maintenant !</p>
