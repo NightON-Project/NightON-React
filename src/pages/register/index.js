@@ -20,7 +20,9 @@ function Index() {
           <h1>Que la fête commence !!!</h1>
           <p>Rejoins Nighton, réserve ton logement et commence à faire la fête dès maintenant !</p>
           <button>Sign in with Google</button>
-          <div>OR</div>
+          <div className='alignement'> 
+        <hr className='line1'/> or <hr className='line2'/> 
+        </div>
           <form onSubmit={handleSubmit}>
             <input
               type="text"
@@ -44,8 +46,7 @@ function Index() {
               <input
                 type="checkbox"
                 checked={acceptTerms}
-                onChange={(e) => setAcceptTerms(e.target.checked)}
-              />
+                onChange={(e) => setAcceptTerms(e.target.checked)}/>
               J'accepte les termes et conditions
             </label>
             <button type="submit">S'inscrire</button>

@@ -7,6 +7,20 @@
     display: flex;
     justify-content: space-between;
 }
+.alignement {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+.line1 {
+  width: 45%;
+  margin: 4px;
+}
+
+.line2 {
+  width: 45%;
+  margin: -4px;
+}
 .square-container {
     width: 600px;
     height: 600px;
