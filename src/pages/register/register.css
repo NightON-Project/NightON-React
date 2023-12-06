@@ -7,6 +7,14 @@
     display: flex;
     justify-content: space-between;
 }
+.google{
+
+}
+.facebook{
+  height: 24px;
+  width: 24px;
+}
+
 .alignement {
   display: flex;
   justify-content: space-between; 
@@ -22,16 +30,17 @@
   margin: -4px;
 }
 .square-container {
-    width: 600px;
-    height: 600px;
-    background-color: black; /* ou la couleur de fond souhaitée */
+    margin-right: 188PX;
+    margin-top: 214px;
+    margin-bottom: 214px;
+    width: 571px;
+    height: 596px;
+    flex-shrink: 0;
     border-radius: 18px;
     background: #FFF;
-    align-items: center;
-    justify-content: center;
-    /*flex-shrink: 2;*/
   }
 .register {
+    margin-left: 187px;
     text-align: center;
     height: 100vh;
     display: flex;
@@ -41,16 +50,6 @@
     flex-direction: column;
     justify-content: center;
   }
-  .box {
-    max-height: 600px;
-    max-width: 600px;
-    left: 0;
-    display: flex;
-    position: fixed;
-    top: 0;
-    width: 571px;
-    background-color: rgb(13, 1, 1);
-}
 .register-header {  
     padding: 2em;
     border-radius: 8px;
@@ -69,9 +68,20 @@ h1 {
     color: #dcdcdc;
     margin-bottom: 2em;
   }
-  
-button {
-    background-color: #4CAF50; /* Green */
+.submit{
+  background-color: #7200FF;
+  height: 20px;
+  width: 424px;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 20px;
+}
+.google{
+    
     border: none;
     color: white;
     padding: 15px 32px;

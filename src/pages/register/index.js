@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './register.css';
+import { FaFacebook } from 'react-icons/fa';
 
 function Index() {
   const [nom, setNom] = useState('');
@@ -19,7 +20,8 @@ function Index() {
         <header className="register-header">
           <h1>Que la fête commence !!!</h1>
           <p>Rejoins Nighton, réserve ton logement et commence à faire la fête dès maintenant !</p>
-          <button>Sign in with Google</button>
+          <button className='google'>Sign in with Google</button>
+          <button className='facebook'></button>
           <div className='alignement'> 
         <hr className='line1'/> or <hr className='line2'/> 
         </div>
@@ -49,7 +51,7 @@ function Index() {
                 onChange={(e) => setAcceptTerms(e.target.checked)}/>
               J'accepte les termes et conditions
             </label>
-            <button type="submit">S'inscrire</button>
+            <button className='submit'>S'inscrire</button>
           </form>
         </header>
       </div>
