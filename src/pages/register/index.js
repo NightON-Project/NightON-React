@@ -5,7 +5,6 @@ function Index() {
   const [prenom, setPrenom] = useState('');
   const [email, setEmail] = useState('');
   const [acceptTerms, setAcceptTerms] = useState(false);
-
   const handleSubmit = (event) => {
     event.preventDefault();
     // Ici vous pouvez ajouter le code pour gérer l'envoi des données du formulaire
@@ -16,6 +15,14 @@ function Index() {
     <div className="container">
       <div className="register">
         <header className="register-header">
+        <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M0 40.8H40V0.8H0V40.8Z" fill="url(#pattern0)"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_2010_601" transform="scale(0.00625)"/>
+</pattern>
+</defs>
+</svg>
           <h1>Que la fête commence !!!</h1>
           <p>Rejoins Nighton, réserve ton logement et commence à faire la fête dès maintenant !</p>
           <div className='reseaux'>
@@ -25,7 +32,7 @@ function Index() {
               <path d="M12.2145 22.5001C15.1073 22.5001 17.5358 21.5667 19.3097 19.9567L15.9287 17.39C15.024 18.0083 13.8097 18.44 12.2145 18.44C9.38118 18.44 6.97645 16.6083 6.11922 14.0767L5.99358 14.0871L2.68632 16.5955L2.64307 16.7133C4.40495 20.1433 8.02399 22.5001 12.2145 22.5001Z" fill="#34A853"/>
               <path d="M6.11997 14.0767C5.89379 13.4234 5.76289 12.7233 5.76289 12C5.76289 11.2767 5.89379 10.5767 6.10807 9.92337L6.10208 9.78423L2.75337 7.2356L2.64381 7.28667C1.91765 8.71002 1.50098 10.3084 1.50098 12C1.50098 13.6917 1.91765 15.29 2.64381 16.7133L6.11997 14.0767Z" fill="#FBBC05"/>
               <path d="M12.2145 5.55997C14.2264 5.55997 15.5835 6.41163 16.3574 7.12335L19.3812 4.23C17.5241 2.53834 15.1074 1.5 12.2145 1.5C8.02402 1.5 4.40496 3.85665 2.64307 7.28662L6.10734 9.92332C6.97647 7.39166 9.38122 5.55997 12.2145 5.55997Z" fill="#EB4335"/>
-              </svg><span>Sign in with Google</span></button>
+              </svg><span className='txtgoogle'>S'inscrire avec Google</span></button>
             <button className='facebook'>
             <svg width="93" height="40" viewBox="0 0 93 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 8C0 3.58172 3.58172 0 8 0H85C89.4183 0 93 3.58172 93 8V32C93 36.4183 89.4183 40 85 40H8C3.58172 40 0 36.4183 0 32V8Z" fill="white"/>
