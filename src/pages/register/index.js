@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import './register.css';
+import fiest from './fiest.svg';
+
+
 function Index() {
   const [nom, setNom] = useState('');
   const [prenom, setPrenom] = useState('');
@@ -15,15 +18,10 @@ function Index() {
     <div className="container">
       <div className="register">
         <header className="register-header">
-        <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<path d="M0 40.8H40V0.8H0V40.8Z" fill="url(#pattern0)"/>
-<defs>
-<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0_2010_601" transform="scale(0.00625)"/>
-</pattern>
-</defs>
-</svg>
-          <h1>Que la fête commence !!!</h1> 
+          <div className='show'>
+            <img src={fiest} alt="fvezqv" />
+              <h1>Que la fête commence !!!</h1>
+          </div>
           <p>Rejoins Nighton, réserve ton logement et commence à faire la fête dès maintenant !</p>
           <div className='reseaux'>
             <button className='google'>

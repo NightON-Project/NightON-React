@@ -27,6 +27,12 @@
   justify-content: space-between;
   gap: 20px;
 }
+.show{
+  margin-top: 30px;
+  display:flex; 
+  
+}
+
 .square-container {
     margin-right: 188PX;
     margin-top: 214px;
