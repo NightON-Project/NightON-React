@@ -23,7 +23,7 @@ function Index() {
 </pattern>
 </defs>
 </svg>
-          <h1>Que la fête commence !!!</h1>
+          <h1>Que la fête commence !!!</h1> 
           <p>Rejoins Nighton, réserve ton logement et commence à faire la fête dès maintenant !</p>
           <div className='reseaux'>
             <button className='google'>
