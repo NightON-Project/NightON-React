@@ -80,7 +80,6 @@ function Index() {
           </form>
         </header>
       </div>
-      {/* Ajout de la nouvelle div avec le carré blanc */}
       <div className="square-container">
         <div className="white-square"></div>
       </div>

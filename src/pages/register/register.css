@@ -98,20 +98,30 @@
   }
 .retangle{
   display: flex;
-  width: 408px;
+  width: 456px;
   margin-left: 10px;
+  gap: var(--sizes-button-input-nav-medium-gap, 6px);
+  justify-content: center;
+  align-items: center;
+  padding: var(--sizes-button-input-nav-medium-padding-v, 8px) var(--sizes-button-input-nav-medium-padding-h, 16px);
+
 }
 .submit{
-  background-color: #7200FF;
-  height: 20px;
-  width: 424px;
-  justify-content: center;
-  cursor: pointer;
-  border-radius: 4px;
-  text-decoration: none;
-  text-align: center;
-  display: inline-block;
-  padding: 10px 20px;
+  display: flex;
+width: 456px;
+padding: var(--sizes-button-input-nav-medium-padding-v, 8px) var(--sizes-button-input-nav-medium-padding-h, 16px);
+justify-content: center;
+align-items: center;
+gap: var(--sizes-button-input-nav-medium-gap, 6px);
+border-radius: 10px; /* Vous pouvez ajuster la valeur pour des coins plus arrondis */
+background: #7200FF;
+cursor: pointer;
+text-decoration: none;
+text-align: center;
+border:none;
+color: white;
+
+  
 }
 .deux{
   margin-right: 10px;
