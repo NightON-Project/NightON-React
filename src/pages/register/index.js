@@ -20,9 +20,9 @@ function Index() {
         <header className="register-header">
           <div className='show'>
             <img src={fiest} alt="fvezqv" />
-              <h1>Que la fête commence !!!</h1>
+            <span className='txtfest'><h2>Que la fête commence !!!</h2></span>
           </div>
-          <p>Rejoins Nighton, réserve ton logement et commence à faire la fête dès maintenant !</p>
+          <p className='txtjoin'>Rejoins Nighton, réserve ton logement et commence à faire la fête dès maintenant !</p>
           <div className='reseaux'>
             <button className='google'>
              <svg className='un' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,10 +45,11 @@ function Index() {
             </svg>
           </button>
           </div>
+          <br></br>
         <div className='alignement'> 
             <hr className='line1'/> or <hr className='line2'/> 
         </div>
-          <form onSubmit={handleSubmit}>
+          <form className='rectangle' onSubmit={handleSubmit}>
             <input
               type="text"
               value={nom}
@@ -73,7 +74,9 @@ function Index() {
                 onChange={(e) => setAcceptTerms(e.target.checked)}/>
               J'accepte les termes et conditions
             </label>
-            <button className='submit'>S'inscrire</button>
+            <button className='submit'><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.3333 7.99992H2M11.3333 7.99992L7.33333 11.9999M11.3333 7.99992L7.33333 3.99992M14 3.33325V12.6666" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg> S'inscrire</button>
           </form>
         </header>
       </div>
