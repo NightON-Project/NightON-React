@@ -66,18 +66,22 @@ h1 {
     color: #dcdcdc;
     margin-bottom: 2em;
   }
-.submit{
-  background-color: #7200FF;
-  height: 20px;
-  width: 424px;
-  justify-content: center;
-  cursor: pointer;
-  border-radius: 4px;
-  text-decoration: none;
-  text-align: center;
-  display: inline-block;
-  padding: 10px 20px;
-}
+  .submit {
+    background-color: #7200FF;
+    height: 20px;
+    width: 424px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    padding: var(--sizes-button-input-nav-medium-padding-v, 8px) var(--sizes-button-input-nav-medium-padding-h, 16px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--sizes-button-input-nav-medium-gap, 6px);
+  }
+  
+
 .deux{
   margin-right: 10px;
   position: relative;
