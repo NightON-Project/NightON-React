@@ -38,6 +38,7 @@
     background: #FFF;
   }
 .register {
+    margin-top: 150px;
     margin-left: 187px;
     text-align: center;
     height: 100vh;
@@ -48,6 +49,7 @@
     flex-direction: column;
     justify-content: center;
   }
+
 .register-header {  
     padding: 2em;
     border-radius: 8px;
@@ -61,25 +63,22 @@ h1 {
     color: #fff;
     margin-bottom: 0.5em;
   }
-  
-  p {
-    color: #dcdcdc;
+.intro {
+    color: white;
     margin-bottom: 2em;
+    margin-top: ;
   }
+.rejoins{
+  margin-top: 80px  ;
+}
   .submit {
     background-color: #7200FF;
     height: 20px;
-    width: 424px;
-    cursor: pointer;
-    border-radius: 4px;
-    text-decoration: none;
+    width: 350px;
+    cursor: pointer;  
     text-align: center;
-    display: flex;
-    padding: var(--sizes-button-input-nav-medium-padding-v, 8px) var(--sizes-button-input-nav-medium-padding-h, 16px);
     justify-content: center;
-    align-items: center;
-    gap: var(--sizes-button-input-nav-medium-gap, 6px);
-  }
+    }
   
 
 .deux{
