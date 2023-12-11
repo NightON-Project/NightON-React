@@ -7,13 +7,7 @@
     display: flex;
     justify-content: space-between;
 }
-.google{
 
-}
-meta{
-  height: 24px;
-  width: 24px;
-}
 .alignement {
   display: flex;
   justify-content: space-between; 
@@ -28,6 +22,17 @@ meta{
   width: 45%;
   margin: -4px;
 }
+.reseaux{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.show{
+  margin-top: 30px;
+  display:flex; 
+  
+}
+
 .square-container {
     margin-right: 188PX;
     margin-top: 214px;
@@ -49,16 +54,6 @@ meta{
     flex-direction: column;
     justify-content: center;
   }
-  .box {
-    max-height: 600px;
-    max-width: 600px;
-    left: 0;
-    display: flex;
-    position: fixed;
-    top: 0;
-    width: 571px;
-    background-color: rgb(13, 1, 1);
-}
 .register-header {  
     padding: 2em;
     border-radius: 8px;
@@ -67,29 +62,104 @@ meta{
     max-width: 500px;
     box-shadow: 0 4p    x 8px rgba(0, 0, 0, 0.2);
   }
-  
-h1 {
-    color: #fff;
-    margin-bottom: 0.5em;
+.txtgoogle{
+  color: var(--input-primary-default-text, #09090B);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+.txtjoin{
+  display: inline-block;
+  color: var(--common-neutral-lower, #F1F5F9);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; 
+}
+.txtfest {
+  color: var(--common-neutral-lower, #F1F5F9);
+  font-family: Anton;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px; 
+  display: flex;
+  color: #fff;
+  margin-bottom: 0.5em;
+  justify-content: center;
   }
   
   p {
     color: #dcdcdc;
     margin-bottom: 2em;
   }
+.retangle{
+  display: flex;
+  width: 456px;
+  margin-left: 10px;
+  gap: var(--sizes-button-input-nav-medium-gap, 6px);
+  justify-content: center;
+  align-items: center;
+  padding: var(--sizes-button-input-nav-medium-padding-v, 8px) var(--sizes-button-input-nav-medium-padding-h, 16px);
+
+}
+.submit{
+  display: flex;
+width: 456px;
+padding: var(--sizes-button-input-nav-medium-padding-v, 8px) var(--sizes-button-input-nav-medium-padding-h, 16px);
+justify-content: center;
+align-items: center;
+gap: var(--sizes-button-input-nav-medium-gap, 6px);
+border-radius: 10px; /* Vous pouvez ajuster la valeur pour des coins plus arrondis */
+background: #7200FF;
+cursor: pointer;
+text-decoration: none;
+text-align: center;
+border:none;
+color: white;
+
   
-button {
-    background-color: #4CAF50; /* Green */
+}
+.deux{
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+}
+.un{
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+}
+.google{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
     border: none;
-    color: white;
-    padding: 15px 32px;
+    color: black;
+    width: 350px;
+    height: 40px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
     border-radius: 4px;
+  }
+  .facebook{
+      display: flex;
+      justify-content: space-between;
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+      border-radius: 4px;
+      width: 93px;
+      height: 40px;
   }
   
 input[type="text"],
