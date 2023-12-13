@@ -1,23 +1,65 @@
 import React, { useState } from 'react';
 import './register.css';
+import fiest from './fiest.svg';
+
+
 function Index() {
   const [nom, setNom] = useState('');
   const [prenom, setPrenom] = useState('');
   const [email, setEmail] = useState('');
   const [acceptTerms, setAcceptTerms] = useState(false);
-
   const handleSubmit = (event) => {
     event.preventDefault();
     // Ici vous pouvez ajouter le code pour gérer l'envoi des données du formulaire
     console.log(nom, prenom, email, acceptTerms);
   };
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        password: '',
+    });
+
+    //Mise à jour constante des données entrées par l'utilisateur
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
+
+
+    //Envoie de la requête !
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await fetch('http://localhost:8080/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+
+            //Gestion de la réponse !
+            if (response.ok) {
+                console.log(response.body);
+            } else {
+                const errorResponse = await response.json(); // Récupérer le JSON renvoyé par le serveur
+                console.log(errorResponse.message); // Afficher le message d'erreur côté client
+            }
+        } catch (error) {
+            console.error('Erreur lors de la requête :', error);
+        }
+    };
 
   return (
     <div className="container">
       <div className="register">
+        <div className="box2">
+          <img className='rectangle' alt='rectangle' src='Rectangle.png'/>
+        </div>
         <header className="register-header">
-          <h2 className='intro'>Que la fête commence !!!</h2>
-          <p className='rejoins'>Rejoins Nighton, réserve ton logement et commence à faire la fête dès maintenant!</p>
+          <h1>Que la fête commence !!!</h1>
+          <p>Rejoins Nighton, réserve ton logement et commence à faire la fête dès maintenant !</p>
           <div className='reseaux'>
             <button className='google'>
              <svg className='un' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,7 +90,8 @@ function Index() {
               type="text"
               value={nom}
               onChange={(e) => setNom(e.target.value)}
-              placeholder="Nom"/>
+              placeholder="Nom"
+            />
             <input
               type="text"
               value={prenom}
@@ -65,18 +108,11 @@ function Index() {
               <input
                 type="checkbox"
                 checked={acceptTerms}
-                onChange={(e) => setAcceptTerms(e.target.checked)}/>
+                onChange={(e) => setAcceptTerms(e.target.checked)}
+              />
               J'accepte les termes et conditions
             </label>
-            <button className="submit">
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g id="Logo">
-            <path id="Vector" d="M11.3333 7.99992H2M11.3333 7.99992L7.33333 11.9999M11.3333 7.99992L7.33333 3.99992M14 3.33325V12.6666" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </g>
-    </svg>
-    S'inscrire
-</button>
-
+            <button className='submit'>S'inscrire</button>
           </form>
         </header>
       </div>
@@ -85,7 +121,6 @@ function Index() {
         <div className="white-square"></div>
       </div>
     </div>
-    
   );
 }
 
