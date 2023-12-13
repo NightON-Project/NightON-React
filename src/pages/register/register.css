@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .container {
     display: flex;
     background-image: url('Default.png');
@@ -43,6 +48,7 @@
     text-align: center;
     height: 100vh;
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -65,20 +71,28 @@ h1 {
   }
 .intro {
     color: white;
-    margin-bottom: 2em;
-    margin-top: ;
   }
 .rejoins{
   margin-top: 80px  ;
 }
   .submit {
+    color: white;
     background-color: #7200FF;
-    height: 20px;
+    border-radius: 4px;
+    height: 24px;
     width: 350px;
-    cursor: pointer;  
-    text-align: center;
+    border: none; /* pour supprimer toute bordure par défaut */
+    padding: 10px 20px; /* ajustez le padding selon vos préférences */
+    cursor: pointer; /* style de curseur */
+    display: flex;
+    align-items: center;
     justify-content: center;
     }
+.submit svg {
+      margin-right: 8px;
+      margin-bottom: 2px;
+}
+  
   
 
 .deux{
