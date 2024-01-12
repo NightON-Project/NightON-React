@@ -1,0 +1,24 @@
+/* Ajoutez ces styles à votre fichier CSS */
+
+.calendar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+  }
+  
+  .custom-calendar {
+    /* Ajoutez vos styles personnalisés ici */
+    width: 300px;
+    font-family: 'Arial', sans-serif;
+    color: aliceblue;
+  }
+  
+  /* Stylez selon vos besoins */
+  .card {
+
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}

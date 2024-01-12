@@ -2,14 +2,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 3rem;
+    padding: 3rem 4rem;
     position: sticky;
     top: 0;
+    z-index: 1;
+    transition: all 1s;
+    background: #171A45;
+    border-bottom-left-radius: 20px;  /* Ajustez la valeur selon vos besoins */
+    border-bottom-right-radius: 20px;
 }
 
 .navbar_logo {
-height: 60px;
-width: 60px;
+height: 50;
+width: 222;
 }
 
 .search_bar {
@@ -21,6 +26,7 @@ width: 60px;
     border: 1px solid #ddd;
     border-radius: 2rem;
     box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%);
+    color: white;
 }
 .search_bar:hover {
     box-shadow: 0 1px 2px rgb(0 0 0 / 15%), 0 4px 12px rgb(0 0 0 / 10%);
@@ -47,46 +53,46 @@ justify-content: center;
 align-items: center;
 background-color: var(--theme);
 border-radius: 50%;
- padding: 0.25rem;
- color: var(--white);
+padding: 0.25rem;
+color: var(--white);
 }
 
 .profile_container{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 0.25rem;
-
-    .nighton_home{
-        padding: 1rem;
-        font-weight: 600;
-        border-radius: 2rem;
-        cursor: pointer;
-        font-size: 0.9rem;
-    }
-    .nighton_home:hover{
-        background-color: var(--grey);
-       
-     
-       
-    }
-   
+    gap: 1.5rem;   
 }
 
 
-.profile_flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0.25rem;
-    color: var(--font-grey);
-    border : 1px solid var(--grey);
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
+// windows activity
+
+
+
+
+
+.active_menu {
+
+    background-color: white;
+    height: 150px;
+    * {
+        border: 0;
+        box-shadow: unset;
+        
+    }
+    .search_bar {
+        display: none;
+    }
 }
 
-.menu_items {
-padding: 0.5rem 1rem;
-font-size: 0.8rem;
-color: var(--font-grey);
+.focus {
+    font-weight: bold;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
 }
