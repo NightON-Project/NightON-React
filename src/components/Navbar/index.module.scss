@@ -8,8 +8,7 @@
     z-index: 1;
     transition: all 1s;
     background: #171A45;
-    border-bottom-left-radius: 20px;  /* Ajustez la valeur selon vos besoins */
-    border-bottom-right-radius: 20px;
+
 }
 
 .navbar_logo {
@@ -73,7 +72,7 @@ color: var(--white);
 
 .active_menu {
 
-    background-color: white;
+    background-color: #171A45;
     height: 150px;
     * {
         border: 0;

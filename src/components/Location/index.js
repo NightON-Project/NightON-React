@@ -1,6 +1,6 @@
 // FilterComponent.jsx
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Input from "../UI/Input";
 import "./index.css";
 

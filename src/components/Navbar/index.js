@@ -5,16 +5,16 @@ import logo from "../../assets/img/logo2.png";
 import Button from "../../components/UI/Button";
 import { Link } from "react-router-dom";
 import Location from "../Location";
-// import Calendar from "../Calendar";
-import "primereact/resources/themes/lara-light-cyan/theme.css";
-import "primereact/resources/primereact.min.css";
-import "primeicons/primeicons.css";
+import Calendar from "../Calendar";
+// import "primereact/resources/themes/lara-light-cyan/theme.css";
+// import "primereact/resources/primereact.min.css";
+// import "primeicons/primeicons.css";
 
-import { Calendar } from "primereact/calendar";
+// import { Calendar } from "primereact/calendar";
 
 const Index = ({ inputRef }) => {
   const [windowActivated, setWindowActivated] = useState(0);
-  const [date, setDate] = useState(null);
+  // const [date, setDate] = useState(null);
 
   return (
     <>
@@ -64,7 +64,7 @@ const Index = ({ inputRef }) => {
               style={{ border: "1px solid black", color: "black" }}
             >
               {/* Date */}
-              <Calendar value={date} onChange={(e) => setDate(e.value)} />
+              <Calendar />
             </div>
           </div>
         )}

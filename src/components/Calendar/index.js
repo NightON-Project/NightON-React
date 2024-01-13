@@ -1,16 +1,47 @@
-// import React, { useState } from "react";
-// import { Calendar } from "primereact/calendar";
+import React, { useState } from "react";
+import styles from "./index.module.scss";
+import "react-dates/initialize";
+import "react-dates/lib/css/_datepicker.css";
+import {
+  DateRangePicker,
+  //   SingleDatePicker,
+  //   DayPickerRangeController,
+} from "react-dates";
 
-// import "primereact/resources/themes/lara-light-cyan/theme.css";
-// import "primereact/resources/primereact.min.css";
-// import "primeicons/primeicons.css";
+const Calendar = () => {
+  const [dateState, setDateState] = useState({
+    startDate: null,
+    endDate: null,
+    focusedInput: null,
+  });
 
-// export default function Index() {
-//   const [date, setDate] = useState(null);
+  const { startDate, endDate, focusedInput } = dateState;
 
-//   return (
-//     <div className=" flex justify-content-center p25 grey">
-//       <Calendar value={date} onChange={(e) => setDate(e.value)} />
-//     </div>
-//   );
-// }
+  return (
+    <div
+      className="App"
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
+      <DateRangePicker
+        className={styles.datePicker}
+        startDate={startDate}
+        startDateId="your_unique_start_date_id"
+        endDate={endDate}
+        endDateId="your_unique_end_date_id"
+        onDatesChange={({ startDate, endDate }) =>
+          setDateState({ startDate, endDate, focusedInput })
+        }
+        focusedInput={focusedInput}
+        onFocusChange={(focusedInput) =>
+          setDateState({ ...dateState, focusedInput })
+        }
+      />
+    </div>
+  );
+};
+
+export default Calendar;
