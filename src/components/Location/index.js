@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Input from "../UI/Input";
-import "./index.css";
+import "./index.scss";
 
 const Index = () => {
   const [isInputClicked, setInputClicked] = useState(false);
@@ -41,7 +41,7 @@ const Index = () => {
 
   return (
     <div className="filter-container">
-      <Input
+      <input
         type="text"
         placeholder="Ajouter votre localisation"
         onClick={handleInputClick}
@@ -56,6 +56,7 @@ const Index = () => {
             <>
               <h1>Autour de moi ({distance} km)</h1>
               <input
+                className="input"
                 type="range"
                 min="1"
                 max="200"
