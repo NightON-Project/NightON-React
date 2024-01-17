@@ -4,7 +4,7 @@ import facebook from "../../assets/img/facebook.png";
 import instagram from "../../assets/img/instagram.png";
 import tiktok from "../../assets/img/tiktok.png";
 import twitter from "../../assets/img/twitter.png";
-import logo from "../../assets/img/logo.png";
+import logo from "../../assets/img/logo3.png";
 import playstore from "../../assets/img/playstore.svg";
 import appstore from "../../assets/img/appstore.svg";
 
