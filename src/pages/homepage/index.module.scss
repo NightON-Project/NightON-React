@@ -1,0 +1,23 @@
+.main_header {
+  background: linear-gradient(90deg, #6b1ad7 50%, #432a65 76.04%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 54px; /* 84.375% */
+  margin-top: 3rem;
+}
+
+.main_p {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 3rem;
+  text-align: center;
+}

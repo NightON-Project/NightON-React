@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./index.module.scss";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
-import logo from "../../assets/img/logo3.png";
+import logo from "../../assets/img/logo-navbar.png";
 import Button from "../../components/UI/Button";
 import { Link } from "react-router-dom";
 import Location from "../Location";
@@ -17,7 +17,9 @@ const Index = ({ inputRef }) => {
           windowActivated !== 0 && styles.active_menu
         }`}
       >
-        <img src={logo} alt="Airbnb" className={styles.navbar_logo} />
+        <Link to="/">
+          <img src={logo} alt="Airbnb" className={styles.navbar_logo} />
+        </Link>
 
         <div className={styles.search_bar}>
           <div
