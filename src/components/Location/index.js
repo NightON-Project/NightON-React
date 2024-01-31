@@ -1,7 +1,7 @@
-// FilterComponent.jsx
+
 
 import React, { useState } from "react";
-import Input from "../UI/Input";
+// import Input from "../UI/Input";
 import "./index.scss";
 
 const Index = () => {
@@ -56,7 +56,7 @@ const Index = () => {
             <>
               <h1>Autour de moi ({distance} km)</h1>
               <input
-                className="input"
+                className="input1"
                 type="range"
                 min="1"
                 max="200"

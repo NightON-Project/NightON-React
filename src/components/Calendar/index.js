@@ -1,12 +1,8 @@
+import "react-dates/initialize";
 import React, { useState } from "react";
 import styles from "./index.module.scss";
-import "react-dates/initialize";
 import "react-dates/lib/css/_datepicker.css";
-import {
-  DateRangePicker,
-  //   SingleDatePicker,
-  //   DayPickerRangeController,
-} from "react-dates";
+import { DateRangePicker } from "react-dates";
 
 const Calendar = () => {
   const [dateState, setDateState] = useState({
@@ -18,14 +14,7 @@ const Calendar = () => {
   const { startDate, endDate, focusedInput } = dateState;
 
   return (
-    <div
-      className="App"
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-      }}
-    >
+    <div className={styles.wrapper}>
       <DateRangePicker
         className={styles.datePicker}
         startDate={startDate}

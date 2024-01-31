@@ -7,10 +7,7 @@
   align-items: center;
 }
 
-input,
-h1,
-h3,
-button {
+input {
   width: 100%;
   padding: 10px;
   margin: 0;
@@ -33,20 +30,13 @@ button {
   display: block;
 }
 
-h3 {
-  cursor: pointer;
-}
-
-h3:hover {
-  background-color: #f0f0f0;
-}
-
 button {
   background-color: #3498db;
   color: #fff;
   border: none;
   cursor: pointer;
   border-radius: 0 0 4px 4px;
+  margin: 10px;
 }
 
 button:hover {
@@ -66,10 +56,6 @@ button:hover {
 h1 {
   font-size: 24px;
 }
-
-// .btn {
-//   display: flex;
-// }
 
 .input {
   padding: 2rem;

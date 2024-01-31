@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import styles from "./index.module.scss";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import logo from "../../assets/img/logo-navbar.png";
@@ -9,6 +9,12 @@ import Calendar from "../Calendar";
 
 const Index = ({ inputRef }) => {
   const [windowActivated, setWindowActivated] = useState(0);
+  const calendarRef = useRef(null);
+
+  const handleDateChange = ({ startDate, endDate }) => {
+    // Utilisez les dates sélectionnées comme vous le souhaitez
+    console.log("Dates sélectionnées :", startDate, endDate);
+  };
 
   return (
     <div className={styles.wrapper}>
@@ -60,7 +66,7 @@ const Index = ({ inputRef }) => {
               style={{ border: "1px solid black", color: "black" }}
             >
               {/* Date */}
-              <Calendar />
+              <Calendar ref={calendarRef} onDateChange={handleDateChange} />
             </div>
           </div>
         )}
