@@ -5,7 +5,7 @@
 }
 .container {
     display: flex;
-    background-image: url(Default.svg);
+    background-image: url(Default.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -78,13 +78,13 @@ h1 {
     margin-bottom: 0.5em;
   }
 .intro {
-    color: white;
-    font-family: Anton;
-    font-size: 32px;
-font-style: normal;
-font-weight: 400;
-line-height: 28px;
-padding-left: 10px;
+  color: white;
+  font-family: Anton;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  padding-left: 10px;
 
   }
 .toggle-div{
@@ -95,8 +95,12 @@ padding-left: 10px;
   gap: 10px;
 }
 .terms{
-  text-align: right;
+  text-align: center;
 }
+/*/@font-face {
+  font-family: Anton;
+  src: local('Anton'), url('./Anton') format('truetype');
+}*/
 .toggle-fields1{
     display: flex;
     border: none;

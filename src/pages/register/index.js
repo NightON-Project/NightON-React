@@ -4,24 +4,16 @@ import fiest from './fiest.png';
 
 
 function Index() {
-  const [nom, setNom] = useState('');
-  const [prenom, setPrenom] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = ('');
   const [acceptTerms, setAcceptTerms] = useState(false);
   const [showFields, setShowFields] = useState(true);
-  const [activeButton, setActiveButton] = useState('toggle-fields1');
   const [showVerification, setShowVerification] = useState(true);
   const [code, setCode] = useState(Array(5).fill('')); // État pour stocker le code de vérification
 
 
 
 
-  const handleButtonClick = () => {
-    setShowFields(!showFields);
-    setShowVerification(false)
-  };
-  
  
   const handleEmailClick = () => {
       // Logique pour envoyer l'email de vérification
