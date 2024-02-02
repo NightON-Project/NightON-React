@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import Location from "../Location";
 import Calendar from "../Calendar";
 
-const Index = ({ inputRef }) => {
+const Index = () => {
   const [windowActivated, setWindowActivated] = useState(0);
   const calendarRef = useRef(null);
 
@@ -58,7 +58,7 @@ const Index = ({ inputRef }) => {
               onClick={() => setWindowActivated(1)}
             >
               {/* Destination */}
-              <Location ref={inputRef} />
+              <Location />
             </div>
             <div
               className={`${windowActivated === 2 && styles.focus}`}
