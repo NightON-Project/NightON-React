@@ -7,7 +7,7 @@
 }
 .container {
     display: flex;
-    background-image: url(Default.png);
+    background-image: url(../../assets/img/Default.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

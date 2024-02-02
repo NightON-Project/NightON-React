@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './register.css';
-import fiest from '../../assets/fiest.svg';
+import fiest from '../../assets/img/fiest.svg';
 
 
 function Index() {
