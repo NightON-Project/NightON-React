@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +12,7 @@
     background-position: center center;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .alignement {
@@ -39,9 +39,9 @@
 }
 .reseaux{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 456px;
+  
 }
 .square-container {
     margin-right: 188PX;
@@ -130,6 +130,10 @@ h1 {
     border-radius: 8px;
     text-align: center;
 }
+.or{
+  font-family: Inter;
+  font-size: 14px;
+}
 .rejoins{
   color: white;
   font-size: 14px;
@@ -161,6 +165,7 @@ h1 {
   
 
 .google{
+  position: relative;
   background-color: white;
   border: none;
   color: black;
@@ -182,7 +187,6 @@ h1 {
 }
   .facebook{
       display: flex;
-      justify-content: space-between;
       border: none;
       color: white;
       text-align: center;
