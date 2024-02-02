@@ -18,17 +18,20 @@
 .alignement {
   display: flex;
   justify-content: space-between;
-  width: 456px; 
   align-items: center; 
 }
 .line1 {
   width: 190px;
   margin: 4px;
+  border-radius: 1px;
+  border: solid 1px white;
 }
 
 .line2 {
   width: 190px;
   margin: -4px;
+  border-radius: 1px;
+  border: solid 1px white;
 }
 .or{
   color: white !important;
@@ -37,6 +40,7 @@
 .reseaux{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 456px;
 }
 .square-container {
@@ -208,6 +212,8 @@ input[type="checkbox"] {
 form {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   
   label {
