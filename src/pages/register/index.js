@@ -6,8 +6,7 @@ import fiest from './fiest.png';
 function Index() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = ('');
-  const [acceptTerms, setAcceptTerms] = useState(false);
-  const [showFields, setShowFields] = useState(true);
+//const [acceptTerms, setAcceptTerms] = useState(false);
   const [showVerification, setShowVerification] = useState(true);
   const [code, setCode] = useState(Array(5).fill('')); // État pour stocker le code de vérification
 
@@ -54,7 +53,7 @@ function Index() {
               <path d="M12.2145 22.5001C15.1073 22.5001 17.5358 21.5667 19.3097 19.9567L15.9287 17.39C15.024 18.0083 13.8097 18.44 12.2145 18.44C9.38118 18.44 6.97645 16.6083 6.11922 14.0767L5.99358 14.0871L2.68632 16.5955L2.64307 16.7133C4.40495 20.1433 8.02399 22.5001 12.2145 22.5001Z" fill="#34A853"/>
               <path d="M6.11997 14.0767C5.89379 13.4234 5.76289 12.7233 5.76289 12C5.76289 11.2767 5.89379 10.5767 6.10807 9.92337L6.10208 9.78423L2.75337 7.2356L2.64381 7.28667C1.91765 8.71002 1.50098 10.3084 1.50098 12C1.50098 13.6917 1.91765 15.29 2.64381 16.7133L6.11997 14.0767Z" fill="#FBBC05"/>
               <path d="M12.2145 5.55997C14.2264 5.55997 15.5835 6.41163 16.3574 7.12335L19.3812 4.23C17.5241 2.53834 15.1074 1.5 12.2145 1.5C8.02402 1.5 4.40496 3.85665 2.64307 7.28662L6.10734 9.92332C6.97647 7.39166 9.38122 5.55997 12.2145 5.55997Z" fill="#EB4335"/>
-              </svg><span>Sign in with Google</span></button>
+              </svg><span className='g-fire'>Se connecter avec Google</span></button>
             <button className='facebook'>
             <svg width="93" height="40" viewBox="0 0 93 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 8C0 3.58172 3.58172 0 8 0H85C89.4183 0 93 3.58172 93 8V32C93 36.4183 89.4183 40 85 40H8C3.58172 40 0 36.4183 0 32V8Z" fill="white"/>
@@ -81,7 +80,7 @@ function Index() {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="Email"
+              placeholder="leomartin@gmail.com"
             />
             <br></br>
              {showVerification && (
@@ -114,8 +113,7 @@ function Index() {
             </div>
              )}
              <br></br>
-            <button className="submit">
-              
+              <button className="submit">
                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                <g id="Logo">
             <path id="Vector" d="M11.3333 7.99992H2M11.3333 7.99992L7.33333 11.9999M11.3333 7.99992L7.33333 3.99992M14 3.33325V12.6666" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -124,14 +122,6 @@ function Index() {
               <span className='straight'>S'inscrire</span>
             </button>
             <br></br>
-            <label className='terms'>
-              <input
-                type="checkbox"
-                checked={acceptTerms}
-                onChange={(e) => setAcceptTerms(e.target.checked)}/>
-              J'accepte les termes et conditions
-            </label>
-
           </form>
         </header>
       </div>

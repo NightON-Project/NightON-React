@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -36,7 +38,6 @@
   display: flex;
   justify-content: space-between;
   width: 456px;
-  gap: 20px;
 }
 .square-container {
     margin-right: 188PX;
@@ -79,7 +80,7 @@ h1 {
   }
 .intro {
   color: white;
-  font-family: Anton;
+  font-family: 'Anton',sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -97,10 +98,6 @@ h1 {
 .terms{
   text-align: center;
 }
-/*/@font-face {
-  font-family: Anton;
-  src: local('Anton'), url('./Anton') format('truetype');
-}*/
 .toggle-fields1{
     display: flex;
     border: none;
@@ -111,7 +108,7 @@ h1 {
     display: inline-block;
     font-size: 14px;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 8px;
     text-align: center;
     gap: 20px;
     background-color: #FA00FF;
@@ -126,7 +123,7 @@ h1 {
     display: inline-block;
     font-size: 14px;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 8px;
     text-align: center;
 }
 .rejoins{
@@ -134,47 +131,51 @@ h1 {
   font-size: 14px;
   text-align: left;
 }
-  .submit {
-    color: white;
-    background-color: #7200FF;
-    border-radius: 4px;
-    font-size: 14px;
-    height: 24px;
-    width: 456px;
-    border: none;
-    padding: 10px 20px; 
-    cursor: pointer; /* style de curseur */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden; /* Added to prevent content from spilling outside the button */
-    position: relative; /* Needed for absolute positioning of children */
-    transition: background-color 0.3s;
-    }
-.submit svg {
-    transition: transform 0.3s ease;
-    margin-right: 8px;
-    margin-bottom: 2px;
+.submit {
+  display: flex;
+  width: 456px;
+  height: 36px; /* Adjust height as needed or remove if not necessary */
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #7200FF; /* Adjust the color to match your design */
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: background-color 0.3s;
 }
+
+.submit svg {
+  transition: transform 0.3s ease;
+  margin-right: 8px;
+}
+
   
   
 
 .google{
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    border: none;
-    color: black;
-    width: 350px;
-    height: 40px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 4px;
-    box-sizing: border-box;
+  background-color: white;
+  border: none;
+  color: black;
+  width: 350px;
+  height: 40px;
+  display: flex;
+  align-items: center; /* This will vertically center the items in the button */
+  justify-content: center; /* This will horizontally center the items in the button */
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 0; /* Adjust padding as needed */
+  gap: 10px; 
   }
+.gfire{
+  margin-top: 25px;
+}
   .facebook{
       display: flex;
       justify-content: space-between;
@@ -184,7 +185,7 @@ h1 {
       text-decoration: none;
       display: inline-block;
       cursor: pointer;
-      border-radius: 4px;
+      border-radius: 8px;
       width: 93px;
       height: 40px;
   }
@@ -196,7 +197,7 @@ input[type="email"] {
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 8px;
     box-sizing: border-box;
   }
   
@@ -253,6 +254,7 @@ form {
   align-items: center;
   justify-content: center;
   justify-content: space-around;
+  border-radius: 8px;
 }
 
 input[type="password"] {
@@ -261,11 +263,14 @@ width: 42px;
 height: 48px;
 justify-content: center;
 border: solid 1px #CBD5E1;
-border-radius: 4px;
+border-radius: 8px;
 }
-.input-digit::placeholder {
+.digit::placeholder {
   color: #6366F1;
   text-align: center;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 16px;
 
 }
 
