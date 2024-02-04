@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -24,14 +26,14 @@
   width: 190px;
   margin: 4px;
   border-radius: 1px;
-  border: solid 1px white;
+  border: solid 0.5px white;
 }
 
 .line2 {
   width: 190px;
   margin: -4px;
   border-radius: 1px;
-  border: solid 1px white;
+  border: solid 0.5px white;
 }
 .or{
   color: white !important;
@@ -131,10 +133,11 @@ h1 {
     text-align: center;
 }
 .or{
-  font-family: Inter;
+  font-family: 'Inter',sans-serif;
   font-size: 14px;
 }
 .rejoins{
+  font-family: 'Anton',sans-serif;
   color: white;
   font-size: 14px;
   text-align: left;
@@ -207,6 +210,11 @@ input[type="email"] {
     border: 1px solid #ccc;
     border-radius: 8px;
     box-sizing: border-box;
+  }
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
   }
   
 input[type="checkbox"] {

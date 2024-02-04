@@ -76,6 +76,7 @@ function Index() {
           <div className='toggle-div'>
           </div>
           <br></br>
+            
             <input
               type="email"
               value={email}
