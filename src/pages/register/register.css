@@ -55,6 +55,11 @@
     border-radius: 18px;
     background: #FFF;
   }
+.square-container:hover {
+  transition: all 0.3s linear;
+  background-color: grey;
+  border-radius: 30%;
+}
 .register {
     margin-top: 150px;
     margin-left: 187px;
@@ -159,9 +164,12 @@ h1 {
   transition: background-color 0.3s;
 }
 
-.submit svg {
-  transition: transform 0.3s ease;
+.fleche {
+  transition: all 1s linear;
   margin-right: 8px;
+}
+.fleche:hover{
+  translate: 30px;
 }
 
   

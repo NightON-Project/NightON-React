@@ -82,6 +82,7 @@ function Index() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="leomartin@gmail.com"
+              je suis la 
             />
             <br></br>
              {showVerification && (
@@ -112,10 +113,10 @@ function Index() {
             onChange={(e)=> setPassword(e.target.value)}
             placeholder=" + "/>
             </div>
-             )}
+             )} 
              <br></br>
               <button className="submit">
-               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <svg className='fleche' width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                <g id="Logo">
             <path id="Vector" d="M11.3333 7.99992H2M11.3333 7.99992L7.33333 11.9999M11.3333 7.99992L7.33333 3.99992M14 3.33325V12.6666" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                   </g>
