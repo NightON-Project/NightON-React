@@ -165,10 +165,10 @@ h1 {
 }
 
 .fleche {
-  transition: all 1s linear;
   margin-right: 8px;
 }
-.fleche:hover{
+.submit:hover{
+  transition: ease-in 1s linear;
   translate: 30px;
 }
 
