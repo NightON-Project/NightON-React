@@ -56,7 +56,7 @@
     background: #FFF;
   }
 .square-container:hover {
-  transition: all 0.3s linear;
+  transition: all 0.3s ease-in;
   background-color: grey;
   border-radius: 30%;
 }
@@ -161,19 +161,14 @@ h1 {
   cursor: pointer;
   overflow: hidden;
   position: relative;
-  transition: background-color 0.3s;
-}
+  transition: background-color 0.3s;}
 
+.container.clicked .submit .fleche {
+  transform: translate(20px);
+}
 .fleche {
-  margin-right: 8px;
+  margin-right: 20px;
 }
-.submit:hover{
-  transition: ease-in 1s linear;
-  translate: 30px;
-}
-
-  
-  
 
 .google{
   position: relative;
