@@ -1,44 +1,43 @@
 import React, { useState } from "react";
-import styles from "./index.module.scss";
+import { DateRangePicker } from "react-dates";
 import "react-dates/initialize";
 import "react-dates/lib/css/_datepicker.css";
-import {
-  DateRangePicker,
-  //   SingleDatePicker,
-  //   DayPickerRangeController,
-} from "react-dates";
+import styles from "./index.module.scss";
+import moment from "moment";
 
 const Calendar = () => {
   const [dateState, setDateState] = useState({
-    startDate: null,
-    endDate: null,
+    startDate: moment(),
+    endDate: moment(),
     focusedInput: null,
   });
 
   const { startDate, endDate, focusedInput } = dateState;
+  // cette fonction permet de changer le state de startDate et endDate
+  const handleDateChange = ({ startDate, endDate }) => {
+    console.log(moment(startDate), "change");
+    setDateState({
+      startDate: moment(startDate),
+      endDate: moment(endDate),
+      focusedInput,
+    });
+  };
+
+  // cette fonction permet de changer le state de focusedInput
+  const handleFocusChange = (focusedInput) => {
+    setDateState({ ...dateState, focusedInput });
+  };
 
   return (
-    <div
-      className="App"
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-      }}
-    >
+    <div className={styles.wrapper}>
       <DateRangePicker
-        className={styles.datePicker}
         startDate={startDate}
         startDateId="your_unique_start_date_id"
         endDate={endDate}
         endDateId="your_unique_end_date_id"
-        onDatesChange={({ startDate, endDate }) =>
-          setDateState({ startDate, endDate, focusedInput })
-        }
+        onDatesChange={handleDateChange}
         focusedInput={focusedInput}
-        onFocusChange={(focusedInput) =>
-          setDateState({ ...dateState, focusedInput })
-        }
+        onFocusChange={handleFocusChange}
       />
     </div>
   );

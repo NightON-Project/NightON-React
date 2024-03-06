@@ -1,0 +1,32 @@
+.container {
+}
+
+.images {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  min-width: 1200px;
+  width: 860px;
+  margin: 0 auto;
+}
+
+.images_right {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100%;
+}
+
+.left {
+  width: 930px;
+  height: 503px;
+  flex-shrink: 0;
+  // mettre border radiuis a gauche en haut et en bas
+  border-radius: 10px 0 0 10px;
+}
+.right {
+  width: 172px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 0 10px 10px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+}

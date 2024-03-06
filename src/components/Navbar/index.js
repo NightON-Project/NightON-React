@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import styles from "./index.module.scss";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import logo from "../../assets/img/logo-navbar.png";
@@ -7,8 +7,14 @@ import { Link } from "react-router-dom";
 import Location from "../Location";
 import Calendar from "../Calendar";
 
-const Index = ({ inputRef }) => {
+const Index = () => {
   const [windowActivated, setWindowActivated] = useState(0);
+  const calendarRef = useRef(null);
+
+  const handleDateChange = ({ startDate, endDate }) => {
+    // Utilisez les dates sélectionnées comme vous le souhaitez
+    console.log("Dates sélectionnées :", startDate, endDate);
+  };
 
   return (
     <div className={styles.wrapper}>
@@ -52,7 +58,7 @@ const Index = ({ inputRef }) => {
               onClick={() => setWindowActivated(1)}
             >
               {/* Destination */}
-              <Location ref={inputRef} />
+              <Location />
             </div>
             <div
               className={`${windowActivated === 2 && styles.focus}`}
@@ -60,7 +66,7 @@ const Index = ({ inputRef }) => {
               style={{ border: "1px solid black", color: "black" }}
             >
               {/* Date */}
-              <Calendar />
+              <Calendar ref={calendarRef} onDateChange={handleDateChange} />
             </div>
           </div>
         )}

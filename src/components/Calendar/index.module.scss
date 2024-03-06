@@ -1,9 +1,14 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .datePicker {
   width: 100%;
   padding: 8px 12px;
   font-size: 15px;
   font-weight: 400;
-  // line-height: 15px;
+  line-height: 15px;
   color: black;
   border: 1px solid #b8b8b5;
   border-radius: 10px;

@@ -23,7 +23,7 @@ const Card = () => {
         </p>
         <p
           style={{
-            margin: "0.2rem",
+            marginTop: "0.2rem",
             fontSize: "0.8rem",
             color: "var(--font-grey)",
           }}
