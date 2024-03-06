@@ -13,13 +13,14 @@ const Calendar = () => {
   });
 
   const { startDate, endDate, focusedInput } = dateState;
-
   // cette fonction permet de changer le state de startDate et endDate
   const handleDateChange = ({ startDate, endDate }) => {
     console.log(moment(startDate), "change");
-    const momentDateStart = moment(startDate);
-    const momentDateEnd = moment(endDate);
-    setDateState({ momentDateStart, momentDateEnd });
+    setDateState({
+      startDate: moment(startDate),
+      endDate: moment(endDate),
+      focusedInput,
+    });
   };
 
   // cette fonction permet de changer le state de focusedInput
