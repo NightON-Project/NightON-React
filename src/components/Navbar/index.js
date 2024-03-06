@@ -71,7 +71,7 @@ const Index = () => {
           </div>
         )}
         <div className={styles.profile_container}>
-          <Link to="/register">
+          <Link to="/signin">
             <Button
               type="submit"
               title="Inscription"

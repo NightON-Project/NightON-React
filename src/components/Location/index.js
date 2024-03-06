@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 import React, { useState } from "react";
+=======
+
+
+import React, { useState } from "react";
+// import Input from "../UI/Input";
+>>>>>>> d50e8c897398770a3b314254e51d6d6c377d2d43
 import "./index.scss";
 
 const Index = () => {

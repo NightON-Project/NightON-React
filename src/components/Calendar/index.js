@@ -1,9 +1,16 @@
+import "react-dates/initialize";
 import React, { useState } from "react";
+<<<<<<< HEAD
 import { DateRangePicker } from "react-dates";
 import "react-dates/initialize";
 import "react-dates/lib/css/_datepicker.css";
 import styles from "./index.module.scss";
 import moment from "moment";
+=======
+import styles from "./index.module.scss";
+import "react-dates/lib/css/_datepicker.css";
+import { DateRangePicker } from "react-dates";
+>>>>>>> d50e8c897398770a3b314254e51d6d6c377d2d43
 
 const Calendar = () => {
   const [dateState, setDateState] = useState({
