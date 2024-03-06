@@ -1,19 +1,19 @@
-import React, { useState, useRef } from "react";
-import styles from "./index.module.scss";
-import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
-import logo from "../../assets/img/logo-navbar.png";
-import Button from "../../components/UI/Button";
-import { Link } from "react-router-dom";
-import Location from "../Location";
-import Calendar from "../Calendar";
+import React, {useState, useRef} from 'react';
+import styles from './index.module.scss';
+import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
+import logo from '../../assets/img/logo-navbar.png';
+import Button from '../../components/UI/Button';
+import {Link} from 'react-router-dom';
+import Location from '../Location';
+import Calendar from '../Calendar';
 
 const Index = () => {
   const [windowActivated, setWindowActivated] = useState(0);
   const calendarRef = useRef(null);
 
-  const handleDateChange = ({ startDate, endDate }) => {
+  const handleDateChange = ({startDate, endDate}) => {
     // Utilisez les dates sélectionnées comme vous le souhaitez
-    console.log("Dates sélectionnées :", startDate, endDate);
+    console.log('Dates sélectionnées :', startDate, endDate);
   };
 
   return (
@@ -21,8 +21,7 @@ const Index = () => {
       <div
         className={`${styles.navbar} ${
           windowActivated !== 0 && styles.active_menu
-        }`}
-      >
+        }`}>
         <Link to="/">
           <img src={logo} alt="Airbnb" className={styles.navbar_logo} />
         </Link>
@@ -30,14 +29,12 @@ const Index = () => {
         <div className={styles.search_bar}>
           <div
             className={styles.search_bar_text}
-            onClick={() => setWindowActivated(1)}
-          >
+            onClick={() => setWindowActivated(1)}>
             N'importe où
           </div>
           <div
             className={styles.search_bar_text}
-            onClick={() => setWindowActivated(2)}
-          >
+            onClick={() => setWindowActivated(2)}>
             Quand
           </div>
           <div className={styles.search_bar_text2}>Commencer</div>
@@ -48,30 +45,27 @@ const Index = () => {
         {windowActivated !== 0 && (
           <div
             style={{
-              display: "flex",
-              cursor: "pointer",
-              alignItems: "center",
-            }}
-          >
+              display: 'flex',
+              cursor: 'pointer',
+              alignItems: 'center',
+            }}>
             <div
               className={`${windowActivated === 1 && styles.focus}`}
-              onClick={() => setWindowActivated(1)}
-            >
+              onClick={() => setWindowActivated(1)}>
               {/* Destination */}
               <Location />
             </div>
             <div
               className={`${windowActivated === 2 && styles.focus}`}
               onClick={() => setWindowActivated(2)}
-              style={{ border: "1px solid black", color: "black" }}
-            >
+              style={{border: '1px solid black', color: 'black'}}>
               {/* Date */}
               <Calendar ref={calendarRef} onDateChange={handleDateChange} />
             </div>
           </div>
         )}
         <div className={styles.profile_container}>
-          <Link to="/signin">
+          <Link to="/register">
             <Button
               type="submit"
               title="Inscription"
@@ -90,8 +84,7 @@ const Index = () => {
       {windowActivated !== 0 && (
         <div
           className={styles.overlay}
-          onClick={() => setWindowActivated(0)}
-        ></div>
+          onClick={() => setWindowActivated(0)}></div>
       )}
     </div>
   );

@@ -1,12 +1,12 @@
-import React from "react";
-import styles from "./index.module.scss";
-import facebook from "../../assets/img/facebook.png";
-import instagram from "../../assets/img/instagram.png";
-import tiktok from "../../assets/img/tiktok.png";
-import twitter from "../../assets/img/twitter.png";
-import logo from "../../assets/img/logo-footer.png";
-import playstore from "../../assets/img/playstore.svg";
-import appstore from "../../assets/img/appstore.svg";
+import React from 'react';
+import styles from './index.module.scss';
+import facebook from '../../assets/img/facebook.png';
+import instagram from '../../assets/img/instagram.png';
+import tiktok from '../../assets/img/tiktok.png';
+import twitter from '../../assets/img/twitter.png';
+import logo from '../../assets/img/logo-footer.png';
+import playstore from '../../assets/img/playstore.svg';
+import appstore from '../../assets/img/appstore.svg';
 
 function index() {
   return (
@@ -151,7 +151,7 @@ function index() {
           </div>
         </section>
       </div>
-      <hr style={{ width: "800px", margin: "0 auto" }} />
+      <hr style={{width: '800px', margin: '0 auto'}} />
       {/* <div className={styles.social_medias}> */}
       <div className={styles.left_part}>
         <div>

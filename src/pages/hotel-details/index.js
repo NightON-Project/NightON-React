@@ -1,12 +1,12 @@
-import React from "react";
-import Navbar from "../../components/Navbar/index";
-import Footer from "../../components/Footer/index";
-import styles from "./index.module.scss";
-import hotel from "../../assets/hotels/hotel-1.jpeg";
-import hotel2 from "../../assets/hotels/hotel-2.jpeg";
-import hotel3 from "../../assets/hotels/hotel-3.jpeg";
-import hotel4 from "../../assets/hotels/hotel-4.jpeg";
-import hotel5 from "../../assets/hotels/hotel-5.jpeg";
+import React from 'react';
+import Navbar from '../../components/Navbar/index';
+import Footer from '../../components/Footer/index';
+import styles from './index.module.scss';
+import hotel from '../../assets/hotels/hotel-1.jpeg';
+import hotel2 from '../../assets/hotels/hotel-2.jpeg';
+import hotel3 from '../../assets/hotels/hotel-3.jpeg';
+import hotel4 from '../../assets/hotels/hotel-4.jpeg';
+import hotel5 from '../../assets/hotels/hotel-5.jpeg';
 
 const Index = () => {
   return (

@@ -1,12 +1,5 @@
-<<<<<<< HEAD
-import React, { useState } from "react";
-=======
-
-
-import React, { useState } from "react";
-// import Input from "../UI/Input";
->>>>>>> d50e8c897398770a3b314254e51d6d6c377d2d43
-import "./index.scss";
+import React, {useState} from 'react';
+import './index.scss';
 
 const Index = () => {
   // État pour gérer si l'input a été cliqué
@@ -48,11 +41,11 @@ const Index = () => {
 
   // Fonction pour appliquer les filtres
   const applyFilters = () => {
-    alert("Filtres validés !");
+    alert('Filtres validés !');
   };
 
   // Gestionnaire de changement de la distance
-  const handleDistanceChange = (event) => {
+  const handleDistanceChange = event => {
     setDistance(event.target.value);
   };
 
@@ -77,7 +70,7 @@ const Index = () => {
         <div className="filter-main">
           {/* Option "Autour de moi" */}
           <h1 className="text" onClick={handleAroundMeClick}>
-            Autour de moi{" "}
+            Autour de moi{' '}
           </h1>
 
           {/* Option "Toute la France" - Affichée seulement si "Autour de moi" n'est pas sélectionné */}

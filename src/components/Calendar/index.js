@@ -1,16 +1,9 @@
-import "react-dates/initialize";
-import React, { useState } from "react";
-<<<<<<< HEAD
-import { DateRangePicker } from "react-dates";
-import "react-dates/initialize";
-import "react-dates/lib/css/_datepicker.css";
-import styles from "./index.module.scss";
-import moment from "moment";
-=======
-import styles from "./index.module.scss";
-import "react-dates/lib/css/_datepicker.css";
-import { DateRangePicker } from "react-dates";
->>>>>>> d50e8c897398770a3b314254e51d6d6c377d2d43
+import React, {useState} from 'react';
+import {DateRangePicker} from 'react-dates';
+import 'react-dates/initialize';
+import 'react-dates/lib/css/_datepicker.css';
+import styles from './index.module.scss';
+import moment from 'moment';
 
 const Calendar = () => {
   const [dateState, setDateState] = useState({
@@ -19,10 +12,10 @@ const Calendar = () => {
     focusedInput: null,
   });
 
-  const { startDate, endDate, focusedInput } = dateState;
+  const {startDate, endDate, focusedInput} = dateState;
   // cette fonction permet de changer le state de startDate et endDate
-  const handleDateChange = ({ startDate, endDate }) => {
-    console.log(moment(startDate), "change");
+  const handleDateChange = ({startDate, endDate}) => {
+    console.log(moment(startDate), 'change');
     setDateState({
       startDate: moment(startDate),
       endDate: moment(endDate),
@@ -31,8 +24,8 @@ const Calendar = () => {
   };
 
   // cette fonction permet de changer le state de focusedInput
-  const handleFocusChange = (focusedInput) => {
-    setDateState({ ...dateState, focusedInput });
+  const handleFocusChange = focusedInput => {
+    setDateState({...dateState, focusedInput});
   };
 
   return (
