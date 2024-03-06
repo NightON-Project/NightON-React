@@ -4,6 +4,7 @@ import Homepage from "../pages/homepage/index.js";
 import Login from "../pages/login/index.js";
 import Register from "../pages/register/index.js";
 import Detail from "../pages/hotel-details/index.js";
+import Paymentpage from "../pages/paymentpage/index.js";
 
 function Index() {
   return (
@@ -13,6 +14,7 @@ function Index() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/hotel-details" element={<Detail />} />
+        <Route path="/paymentpage" element={<Paymentpage />} />
       </Routes>
     </Router>
   );

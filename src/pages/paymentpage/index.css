@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .container {
     display: flex;
     background-image: url(../../assets/img/Default.svg);
@@ -11,3 +17,13 @@
     justify-content: space-between;
     align-items: center;
 }
+.square-container {
+    margin-right: 188PX;
+    margin-top: 214px;
+    margin-bottom: 214px;
+    width: 571px;
+    height: 596px;
+    flex-shrink: 0;
+    border-radius: 18px;
+    background: #FFF;
+  }

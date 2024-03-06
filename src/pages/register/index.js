@@ -32,7 +32,7 @@ function Index() {
       // Logique de soumission du code de vérification
     };
   
-
+ 
   return (
     <div className="container">
       <div className="register">

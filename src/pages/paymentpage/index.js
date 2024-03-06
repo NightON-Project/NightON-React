@@ -23,8 +23,9 @@ function Index() {
 
     return (
         <div className='container'>
-            <form onSubmit={handleSubmit}>
-                <input
+            <div className='register'>
+                <form onSubmit={handleSubmit}>
+                 <input
                     type="text"
                     value={nom}
                     onChange={(e) => setNom(e.target.value)}
@@ -70,6 +71,8 @@ function Index() {
                 </label>
                 <button type="submit">Soumettre</button>
             </form>
+            </div>
+            <div className='payment-container'></div>
         </div>
     );
 }
