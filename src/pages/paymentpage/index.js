@@ -10,5 +10,20 @@ function Index() {
     const [ville, setVille] = useState('');
     const [postcode, setPostcode] = useState('');
     const [acceptTerms, setAcceptTerms] = useState(false); 
+}
 
- }
+ const handleSubmit = (event) => {
+    event.preventDefault();
+        // Logique de soumission du formulaire
+      };
+    
+const handleVerificationSubmit = (event) => {
+        event.preventDefault();
+        // Logique de soumission du code de vérification
+      };
+
+      return (
+        <div className='container'>
+
+        </div>
+      )
