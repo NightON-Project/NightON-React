@@ -1,6 +1,6 @@
-import React from "react";
-import styles from "./index.module.scss";
-import Card from "./card";
+import React from 'react';
+import styles from './index.module.scss';
+import Card from './card';
 
 const Cards = () => {
   return (
