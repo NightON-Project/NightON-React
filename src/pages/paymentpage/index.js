@@ -70,7 +70,9 @@ function Index() {
                     J'accepte les termes et conditions
                 </label>
                 <br></br>
-              <button className="submit">
+            <br></br>
+            </form>
+            <button className="submit">
                 <div className="movement">
                 <svg className="fleche" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Logo" x="10" y="10">
@@ -81,8 +83,6 @@ function Index() {
                   <span className='straight'>S'inscrire</span>
               </div>
             </button>
-            <br></br>
-            </form>
             </div>
             <div className='square-container'>
                 <div className="white-square">
