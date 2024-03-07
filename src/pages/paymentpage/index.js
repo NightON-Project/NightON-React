@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './index.css';
+import './payment.css';
 import fiest from '../../assets/img/fiest.svg';
 
 function Index() {
@@ -72,7 +72,15 @@ function Index() {
                 <button type="submit">Soumettre</button>
             </form>
             </div>
-            <div className='payment-container'></div>
+            <div className='square-container'>
+                <div className="white-square">
+                    <div className='Id'>
+                        <h3 className='identity'>
+                            Papier d'identité
+                        </h3>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
