@@ -12,7 +12,7 @@ function Index() {
     const [acceptTerms, setAcceptTerms] = useState(false);
 
     const handleSubmit = (event) => {
-        event.preventDefault();
+        event.preventDefault(); 
         // Logique de soumission du formulaire
     };
     
