@@ -1,9 +1,19 @@
 .main {
     background: linear-gradient(to bottom right, #7200ff 61%, #fa00ff 100%);
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
+
+.successMessage {
+  color: green;
+}
+
+.errorMessage,
+.error {
+  color: red;
+}
+
 
 button{
   display: flex;
@@ -31,7 +41,7 @@ button{
 }
 
 .SblocLeft{
-  // border: solid red
+  // border: solid red;
   .deja{
     color: aliceblue;
   }
@@ -49,7 +59,7 @@ h2 {
   margin-bottom: 30px;
   font-style: italic;
   font-family: Anton;
-  font-size: 32px;
+  font-size: 25px;
 }
 
 .rejoins{
@@ -82,7 +92,6 @@ form{
       border-radius: 7px;
       border: none;
       width: 100%;
-      margin-bottom: 9px 0;
   }
 
   input[type="submit"] {
