@@ -61,18 +61,22 @@ function Index() {
                     onChange={(e) => setPostcode(e.target.value)}
                     placeholder="Code postal"
                 />
-                <label>
-                    <input
-                        type="checkbox"
-                        checked={acceptTerms}
-                        onChange={(e) => setAcceptTerms(e.target.checked)}
-                    />
-                    J'accepte les termes et conditions
-                </label>
+               <div className="terms-checkbox-container">
+                <input
+                type="checkbox"
+             id="acceptTerms"
+             checked={acceptTerms}
+             onChange={(e) => setAcceptTerms(e.target.checked)}
+                 className="terms-checkbox"/>
+                 <label htmlFor="acceptTerms" className="terms-label">
+                     J'accepte les termes et conditions
+                 </label>
+                </div>
+
                 <br></br>
             <br></br>
             </form>
-            <button className="submit">
+            <button className="submite">
                 <div className="movement">
                 <svg className="fleche" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Logo" x="10" y="10">

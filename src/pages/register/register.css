@@ -106,9 +106,22 @@ h1 {
   justify-content: space-between;
   gap: 10px;
 }
-.terms{
-  text-align: center;
+.terms-checkbox-container {
+  display: flex;
+  align-items: center; /* Centre verticalement les éléments dans le conteneur */
+  justify-content: center; /* Centre horizontalement les éléments dans le conteneur */
+  margin: 10px 0; /* Ajoutez une marge au-dessus et en dessous pour l'espacement */
 }
+
+.terms-checkbox {
+  margin-right: 8px; /* Espacement entre la case à cocher et le texte */
+}
+
+.terms-label {
+  color: white; /* Ou toute autre couleur de votre choix */
+  cursor: pointer; /* Affiche un curseur de pointeur lorsque vous survolez le label */
+}
+
 .toggle-fields1{
     display: flex;
     border: none;
