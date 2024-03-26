@@ -17,7 +17,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.square-container {
+.square-containere {
     margin-right: 188PX;
     margin-top: 214px;
     margin-bottom: 214px;
@@ -27,3 +27,21 @@
     border-radius: 18px;
     background: #FFF;
   }
+.id p {
+  font-size: 20px;
+}
+.submite{ 
+  display: flex;
+  width: 456px;
+  height: 36px; /* Adjust height as needed or remove if not necessary */
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #7200FF; /* Adjust the color to match your design */
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s; }
